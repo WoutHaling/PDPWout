@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <meta name="author" content="Wout Haling">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="logo.png" alt="">
+        <nav>
+            <ul>
+                <li class="headerhide"><a href="index.html">Home</a></li>
+                <li class="headerhide"><a href="over.html">Over ons</a></li>
+                <li class="headerhide"><a href="activiteiten.html">Activiteiten</a></li>
+                <li class="headerhide"><a href="nieuws.html">Nieuws</a></li>
+                <li class="headerhide"><a href="contact.html">Contact</a></li>
+                <li class="icon">
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="imgbanner">
+            <div class="bannertext">
+                <h1 class="left">Over Ons</h1>
+            </div>
+        </div>
+        <div class="textcontainer">
+            <h1 class="infotext left">Over ons en onze boerderij</h1>
+
+            <div class="textbox">
+                <p class="left">
+                    Al in 1923 kwamen de overgrootouders van Jos naar deze typisch kempische boerderij, gelegen te Voorschoven (Neeroeteren) langs de Zuid-Willemsvaart op de overgang van de maasvallei naar het kempisch plateau. Na twee generatiewisselingen kozen Jos en Linda, elkaar tegengekomen tijdens hun studententijd, in 1992 ervoor om dit boerenbedrijf verder te zetten, aanvankelijk in bijberoep en vanaf 1997 in hoofdberoep nadat Jos zijn boeiende job als landbouwingenieur bij tuinbouw-installatiebedrijf Mereg NV had opgezegd. <br> Kaat, Lien en Simon zagen het wel zitten om mama en papa steeds in de buurt te hebben ! <br><br><br>
+
+                    Over een periode van een tiental jaren werden stallen en schuren afgebroken, bijgebouwd of aangepast, kortom een hele metamorfose die met een aanzienlijke investering gepaard ging maar waarbij het gemengde karakter, akkerbouw - veeteelt behouden bleef.
+                </p>
+                <div class="textbox">
+                    <img class="textimg" src="jos.jpg" alt="">
+                    <img class="textimg" src="akkerbouw.jpg" alt="">
+                    <img class="textimg" src="linda.jpg" alt="">
+                    <img class="textimg" src="zorg.jpg" alt="">
+                    <script>
+                        var slideIndex = 0;
+                        carousel();
+
+                        function carousel() {
+                            var i;
+                            var x = document.getElementsByClassName("textimg");
+                            for (i = 0; i < x.length; i++) {
+                                x[i].style.display = "none";
+                            }
+                            slideIndex++;
+                            if (slideIndex > x.length) {
+                                slideIndex = 1
+                             }
+
+                            x[slideIndex - 1].style.display = "block";
+                            setTimeout(carousel, 5000);
+                        }
+
+                    </script>
+                </div>
+                <p class="left">
+                    Een bewustwordingsproces, gevoed door de kennismaking met de humane homeopathie, het steeds vaker voorkomen van crisissen en de inspirerende contacten met bio-boeren leidde in 2000 tot de omschakeling naar de biologische productiemethode. Voortaan werd er zowel met de kippen als op de akkers op een ecologische, duurzame manier gewerkt.
+
+                    Linda, van opleiding licentiate in de bewegingsleer en therapeute in de psychomotoriek, groeide op in een landbouwersgezin te St-Truiden en kreeg de affeniteit met het buitenleven van huis uit mee. Deze combinatie kreeg vorm in 2008 door een samenwerkingsovereenkomst af te sluiten met dienstencentrum OLV Ter Engelen uit Maaseik en zo kreeg onze boerderij, inmiddels herdoopt in “De Taemhoeve”, een nieuwe dimensie.
+                </p>
+            </div>
+        </div>
+        <footer>
+            <div class="flex">
+                <div class="footerimg">
+                    <h2 class="footerheader">Kwaliteitslabels:</h2>
+                    <img src="logos.png" alt="">
+                </div>
+                <div class="footertext">
+                    <h2 class="footerheader">Adres:</h2>
+                    <p>Taemweg 26, 3680 Neeroeteren <br>
+                        Telefoon:+32 (0)89-86 46 49 <br>
+                        GSM:+32 (0)497-697 464 <br>
+                        Email: info@taemhoeve.be</p>
+                </div>
+            </div>
+            <p>Web development by <b><a href="https://wouthaling.be/">Wout Haling</a></b></p>
+        </footer>
+    </div>
+</body>
+
+</html>
